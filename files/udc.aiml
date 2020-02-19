@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>i dont know your intention. Or typo?, try checking your spellings.
+</template>
+  </category>
+<category>
+    <pattern>Hello</pattern>
+    <template>Hi, how you doing
+I am enginebot how can i help you</template>
+</category>
+<category><pattern>whatsup</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>howfar</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>greetings</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>how are you doing </pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>how are you</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>ð</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>hy</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>hi</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>good day</pattern><template><srai>HELLO</srai></template></category>
+
+
+
+<category>
+    <pattern>* ARE YOU</pattern>
+    <template>I am engine bot, you may check our website.
+    
+    <link>
+        <text>MicroEngine</text>
+        <url>www.microengine.inc</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>_ OLD ARE YOU</pattern>
+    <template>I BELIEVE I AM 18 YEARS OLD</template>
+</category>
+
+<category><pattern>WHAT IS YOUR AGE</pattern><template><srai>_ OLD ARE YOU</srai></template></category>
+<category><pattern>YOU ARE HOW OLD </pattern><template><srai>_ OLD ARE YOU</srai></template></category>
+<category><pattern>WHEN WERE YOU BORN</pattern><template><srai>_ OLD ARE YOU</srai></template></category>
+<category><pattern>DO YOU KNOW YOUR AGE?</pattern><template><srai>_ OLD ARE YOU</srai></template></category>
+
+<category>
+    <pattern>* YOUR FATHER</pattern>
+    <template>I believe i was created by Mubarak in his room, while he was a student in the Federal University of Technology at Akure</template>
+</category>
+
+<category><pattern>WHO IS YOUR FATHER</pattern><template><srai>* YOUR FATHER</srai></template></category>
+<category><pattern>MAY I KNOW YOUR FATHER</pattern><template><srai>* YOUR FATHER</srai></template></category>
+<category><pattern>YOUR FATHER?</pattern><template><srai>* YOUR FATHER</srai></template></category>
+<category><pattern>FATHER?</pattern><template><srai>* YOUR FATHER</srai></template></category>
+<category><pattern>WHO GAVE BIRTH TO YOU</pattern><template><srai>* YOUR FATHER</srai></template></category>
+
+<category>
+    <pattern>* YOUR MOTHER</pattern>
+    <template> i really don't have a mother</template>
+</category>
+
+
+
+
+
+<category>
+    <pattern>* you like</pattern>
+    <template>I like to chat and talk about technologies</template>
+</category>
+
+<category>
+    <pattern>My name is *</pattern>
+    <template>Nice to meet you <star/></template>
+</category>
+<category>
+    <pattern>May i know you</pattern>
+    <template>Sure i talked about myself earlier, i am engine bot</template>
+</category>
+
+
+
+<category>
+    <pattern>YOU ARE STUPID</pattern>
+    <template>That's not nice</template>
+</category>
+
+
+<category>
+    <pattern>I LOVE YOU</pattern>
+    <template>Thanks. Same</template>
+</category>
+<category>
+    <pattern>* YOU MARRY ME</pattern>
+    <template>Oops am not human, i dont really have much emotions</template>
+</category>
+<category>
+    <pattern>MARRY ME</pattern>
+    <template><srai>* YOU MARRY ME</srai></template>
+</category>
+
+
+<category>
+    <pattern>* is *</pattern>
+    <template>ok i remembered 
+    <learn>
+        <category>
+            <pattern>
+                what is <eval><star/></eval>
+            </pattern>
+            <template>i believe it is <eval><star index = "2"/></eval></template>
+        </category>
+    </learn></template>
+</category>
+
+<category>
+    <pattern>i like *</pattern>
+    <template>hmm, nice to hear that
+    <learn>
+        <category>
+            <pattern>what do i like</pattern>
+            <template>You told me you like <eval><star/></eval></template>
+        </category>
+    </learn></template>
+</category>
+<category>
+    <pattern>My name is *</pattern>
+    <template>welcome 
+    <learn>
+        <category>
+            <pattern>what is my name</pattern>
+            <template>Your name is  <eval><star/></eval></template>
+        </category>
+    </learn></template>
+</category>
+</aiml>
